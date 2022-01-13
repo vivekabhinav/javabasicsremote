@@ -12,5 +12,26 @@ public class Student {
 	String name;
 	boolean isMale;
 	float stipend;
+	static String COLLEGE_NAME = "SRM";
+	
+	Student(){
+		System.out.println("vivek:-- abdul im about to construct the box");
+		id =0;
+		name = "abhi";
+		
+	}
+	
+	Student(int i, String nam){
+		id = i;
+		name = nam;
+	}
+	
+	void display(){
+		System.out.println("name is"+ name+" stipend is "+stipend);
+	}
+	
+	static int calculateAggregate(int a, int b) {
+		return a+b/2;
+	}
 
 }
